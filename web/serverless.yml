@@ -1,0 +1,10 @@
+ratedrentals:
+  component: '@sls-next/serverless-component@3.8.0-alpha.0'
+  inputs:
+    roleArn: 'arn:aws:iam::467347433436:role/allow-lambda'
+    bucketName: ratedrentals-assests
+    timeout:
+      defaultLambda: 30
+      apiLambda: 30
+      imageLambda: 30
+    domain: 'ratedrentals.ca'

@@ -1,0 +1,16 @@
+version: "3"
+services:
+  rentalsca-scraper-aws:
+    container_name: rentalsca-scraper-aws
+    image: ${AWS_RENTALSCA_SCRAPER_TAG}/rentalsca-scraper-image
+    build:
+      context: ../../
+      dockerfile: ./scrapers/rentalsca/Dockerfile
+  rentalsca-scraper-local:
+    container_name: rentalsca-scraper-local
+    image: rentalsca-scraper-image
+    build:
+      context: ../../
+      dockerfile: ./scrapers/rentalsca/Dockerfile
+    volumes:
+      - $HOME/.aws:/root/.aws:ro

@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ecs-helper": "file:../../utils/ecs-helper/tgz/ecs-helper-1.0.6.tgz",
+    "mongodb": "^4.3.1",
+    "puppeteer-core": "^13.3.1",
+    "redis": "^4.0.3",
+    "rentalsca.js": "file:../../utils/rentalsca.js/tgz/rentalsca.js-1.0.42.tgz"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "eslint": "^8.9.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/main",
+    "lint": "eslint '**/*.ts'",
+    "prettier": "npx prettier --write ."
+  }
+}
