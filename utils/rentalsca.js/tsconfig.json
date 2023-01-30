@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ESNext",
+    "declaration": true,
+    "rootDir": "src",
+    "outDir": "build"
+  }
+}
