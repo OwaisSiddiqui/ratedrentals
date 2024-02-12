@@ -1,0 +1,9 @@
+Now use Vercel to deploy instead of using serverless with AWS
+
+Used AI Acad for Google Maps API key (since deleted RatedRentals GCP project)
+    - Used "Maps JavaScript API"
+    - NVM Actually dont wanna deal with billing right now!!
+
+FOR AWS:
+
+- Vercel still requires the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY to use the lambda function and access to dynamodb for the app
