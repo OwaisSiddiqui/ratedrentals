@@ -3,8 +3,8 @@ import styled, { keyframes, css } from 'styled-components'
 export const PrimaryButton = styled.button`
   background: ${({ theme }) => theme.colors.primary.hex};
   border: none;
-  border-radius: 5px;
-  padding: 0.9rem 1.5rem;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
   color: white;
   font-weight: 500;
   font-family: ${({ theme }) => theme.font.family.primary};
@@ -14,8 +14,8 @@ export const PrimaryButton = styled.button`
   display: flex;
   cursor: pointer;
   &:hover {
-    box-shadow: ${({ theme }) =>
-      `0px 0px 0px 6px rgb(${theme.colors.primary.rgb.r}, ${theme.colors.primary.rgb.g}, ${theme.colors.primary.rgb.b}, 0.1)`};
+    background: #237676;
+    color: white;
   }
   text-align: center;
   font-size: 1rem;

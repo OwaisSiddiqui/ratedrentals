@@ -85,4 +85,6 @@ export const Footer = styled.div`
   align-items: flex-end;
   gap: 0.7rem;
   padding: 2rem;
+  background: white;
+  border-radius: 1rem 1rem 0 0;
 `

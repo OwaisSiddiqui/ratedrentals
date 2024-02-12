@@ -14,6 +14,7 @@ export const Container = styled.footer`
 
 export const CompanyName = styled.a`
   color: black;
+  text-decoration: none;
 `
 
 export const LogoLink = styled.a`
@@ -21,6 +22,7 @@ export const LogoLink = styled.a`
   width: 7rem;
   height: 100%;
   font-size: 14px;
+  
 `
 
 export const NavLinks = styled.ul`
@@ -31,7 +33,10 @@ export const NavLinks = styled.ul`
 export const NavLi = styled.li``
 
 export const NavLink = styled.a`
-  text-decoration: underline;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
   color: black;
   font-family: ${({ theme }) => theme.font.family.primary};
   font-size: 14px;

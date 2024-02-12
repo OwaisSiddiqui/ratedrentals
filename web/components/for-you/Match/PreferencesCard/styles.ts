@@ -93,14 +93,12 @@ export const DesktopContainer = styled.div`
 export const ChangeCity = styled.button`
   font-family: ${({ theme }) => theme.font.family.primary};
   color: #a3a3a3;
-  
   text-decoration: none;
   font-size: 12px;
   padding: 0;
   background: transparent;
   margin: 0;
   border: none;
-  text-decoration: underline;
   cursor: pointer;
   position: relative;
 `

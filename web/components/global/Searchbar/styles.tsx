@@ -9,14 +9,14 @@ export const Container = styled.section<{
 }>`
   display: flex;
   flex-direction: column;
-  z-index: 999;
+  z-index: 99;
   background: white;
   position: relative;
   &:hover {
     /* box-shadow: ${({ theme }) =>
       `0px 0px 0px 6px rgb(${theme.colors.primary.rgb.r}, ${theme.colors.primary.rgb.g}, ${theme.colors.primary.rgb.b}, 0.1)`}; */
   }
-  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
   padding: 0;
   width: 100%;
   border-radius: ${({ type, isSuggestions }) =>
@@ -41,11 +41,11 @@ export const Suggestions = styled.ul<{
   border-radius: ${({ type }) => (type === 'home' ? '0 0 7px 7px' : '0')};
   overflow: hidden;
   border-bottom: ${({ type, theme }) =>
-    type === 'home' ? `1px solid ${theme.colors.primary.hex}` : 'none'};
+    type === 'home' ? `2px solid ${theme.colors.primary.hex}` : 'none'};
   border-left: ${({ type, theme }) =>
-    type === 'home' ? `1px solid ${theme.colors.primary.hex}` : 'none'};
+    type === 'home' ? `2px solid ${theme.colors.primary.hex}` : 'none'};
   border-right: ${({ type, theme }) =>
-    type === 'home' ? `1px solid ${theme.colors.primary.hex}` : 'none'};
+    type === 'home' ? `2px solid ${theme.colors.primary.hex}` : 'none'};
   margin-bottom: 20rem;
 `
 
@@ -119,17 +119,17 @@ export const SearchBarInputForm = styled.form<{
   border-top: ${({ theme }) => `1px solid ${theme.colors.primary.hex}`}; */
   gap: 5px;
   border-top: ${({ type, theme }) =>
-    type === 'home' ? `1px solid ${theme.colors.primary.hex}` : 'none'};
+    type === 'home' ? `2px solid ${theme.colors.primary.hex}` : 'none'};
   border-bottom: ${({ type, theme, isSuggestions }) =>
     type === 'home'
       ? isSuggestions
-        ? '1px solid #f3f3f3'
-        : `1px solid ${theme.colors.primary.hex}`
+        ? '2px solid #f3f3f3'
+        : `2px solid ${theme.colors.primary.hex}`
       : 'none'};
   border-right: ${({ type, theme }) =>
-    type === 'home' ? `1px solid ${theme.colors.primary.hex}` : 'none'};
+    type === 'home' ? `2px solid ${theme.colors.primary.hex}` : 'none'};
   border-left: ${({ type, theme }) =>
-    type === 'home' ? `1px solid ${theme.colors.primary.hex}` : 'none'};
+    type === 'home' ? `2px solid ${theme.colors.primary.hex}` : 'none'};
   border-radius: ${({ isSuggestions }) =>
     isSuggestions ? '7px 7px 0 0' : '7px'};
   height: 4rem;
@@ -144,7 +144,7 @@ export const SearchbarInput = styled.input`
   min-width: 0; /* to remove it's default width and work nicely with flexbox */
   flex: 1;
   &::placeholder {
-    color: #bebebe;
+    color: black;
   }
   background: transparent;
   font-size: 16px;

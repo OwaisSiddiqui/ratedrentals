@@ -12,6 +12,7 @@ import AvailableCities from '@/components/index/AvailableCities/index'
 import cookie from 'cookie'
 import { isAvailableCity } from '@/utils/city'
 import { GetServerSidePropsContext } from 'next'
+import Navbar from '@/components/global/Navbar'
 
 const Home = () => {
   const router = useRouter()
@@ -40,6 +41,7 @@ const Home = () => {
           RatedRentals: Personalised rental home listings for you
         </title>
       </Head>
+      <Navbar />
       <S.HeroImage>
         <BetaHeader />
         <S.MainTitleSection>

@@ -1,3 +1,4 @@
+import { devices } from '@/utils/constants'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -5,6 +6,13 @@ export const Container = styled.div`
   flex-direction: column;
   min-height: 100%;
   flex: 1;
+  background-image: url('./images/bedroom.jpeg');
+  background-repeat: no-repeat;
+  background-position: 30% 0%;
+  background-size: cover;
+  @media ${devices.tablet} {
+    background-position: 100% 0%;
+  }
 `
 
 export const PageHeader = styled.header`
@@ -18,6 +26,7 @@ export const PageHeader = styled.header`
   flex: 0 1 auto;
   border-bottom: 1px solid #eeeeee;
   padding: 1rem 0;
+  background: white;
 `
 
 export const SkipLink = styled.a`
@@ -49,6 +58,7 @@ export const ChoosenCity = styled.div`
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  background: white;
 `
 
 export const ChoosenCityName = styled.div`

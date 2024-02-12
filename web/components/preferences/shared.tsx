@@ -20,6 +20,10 @@ export const Question = styled.div`
   max-width: 40rem;
   align-items: center;
   padding: 0 1rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 `
 
 export const OptionsSectionWrapper = styled.div`

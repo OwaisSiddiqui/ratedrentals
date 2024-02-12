@@ -19,7 +19,7 @@ export const MainTitleSection = styled.header`
 export const MainHeading = styled.h1`
   font-weight: 600;
   font-size: 2.3rem;
-  color: black;
+  color: white;
   line-height: 1.5;
   @media ${devices.desktopS} {
     font-size: 2.5rem;
@@ -37,12 +37,13 @@ export const MainHeading = styled.h1`
 
 export const MainSubHeading = styled.h2`
   font-size: 25px;
-  font-weight: 600;
-  color: black;
-  line-height: 1.7;
+  font-weight: 700;
+  color: white;
+  line-height: 1.4;
   @media ${devices.desktop} {
     font-size: 2rem;
   }
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
 `
 
 export const CardsSection = styled.main`
@@ -76,35 +77,37 @@ export const HeadingsSection = styled.div`
 
 export const HeroImage = styled.section`
   display: flex;
-  height: 28rem;
-  background-image: url('./images/toronto-skyline-gradient.svg');
+  height: 30rem;
+  background-image: url('./images/house.jpeg');
   background-repeat: no-repeat;
-  background-position: 36% bottom;
-  background-size: 160%;
+  background-position: 100% 0%;
+  background-size: 270%;
   position: relative;
   justify-content: center;
   @media ${devices.mobile} {
-    background-size: 140%;
-    background-position: 33% 60%;
+    background-size: 230%;
+    background-position: 90% 0%;
     height: 43rem;
   }
   @media ${devices.tabletS} {
     height: 48rem;
   }
   @media ${devices.tablet} {
-    background-size: 130%;
+    background-size: 200%;
     height: 48rem;
   }
   @media ${devices.desktopS} {
-    background-size: 115%;
-    background-position: 33% 50%;
+    background-size: 190%;
+    background-position: 100% 0%;
     height: 48rem;
   }
   @media ${devices.desktop} {
-    background-size: 100%;
-    background-position: 0 70%;
-    height: 40rem;
+    background-size: 120%;
+    background-position: 0% 0%;
+    height: 30rem;
   }
+  // border-bottom: ${({ theme }) => `3px solid ${theme.colors.primary.hex}`};
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 `
 
 export const InBetaSection = styled.article`
@@ -155,8 +158,8 @@ export const MainContentTitle = styled.h2`
 `
 
 export const MainContentDescription = styled.p`
-  font-weight: 300;
-  color: #7d7d7d;
+  font-weight: 500;
+  color: black;
   line-height: 27px;
   font-size: 1rem;
   text-align: center;

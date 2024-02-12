@@ -4,7 +4,7 @@ import { PrimaryButton } from '../../styles'
 
 export const Container = styled.section`
   background-color: white;
-  box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.1);
   border-radius: 13px;
   display: flex;
   flex-direction: column;
@@ -46,10 +46,10 @@ export const SubTitle = styled.span`
 export const Description = styled.p`
   font-family: ${({ theme }) => theme.font.family.primary};
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #959595;
+  color: #707070;
 `
 
 export const Titles = styled.div`

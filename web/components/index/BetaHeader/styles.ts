@@ -4,7 +4,7 @@ export const Container = styled.div<{
   show: boolean
 }>`
   display: ${({ show }) => (show ? 'flex' : 'none')};
-  height: 1.5rem;
+  height: 1.9rem;
   align-items: center;
   justify-content: center;
   font-size: 12px;

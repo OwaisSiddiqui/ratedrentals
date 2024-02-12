@@ -173,7 +173,7 @@ const theme: DefaultTheme = {
   },
   colors: {
     primary: {
-      hex: '#00E591',
+      hex: '#00adbb',
       rgb: {
         r: 0,
         g: 229,
