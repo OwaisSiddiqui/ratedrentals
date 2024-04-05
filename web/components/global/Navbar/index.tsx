@@ -26,6 +26,7 @@ const DesktopNavbar = () => {
               layout='fill'
               alt='RatedRentals logo'
               objectFit='contain'
+              unoptimized
             />
           </S.Logo>
         </S.LogoLink>

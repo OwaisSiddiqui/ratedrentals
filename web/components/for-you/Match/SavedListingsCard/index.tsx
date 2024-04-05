@@ -101,6 +101,7 @@ const SavedListingsCard = ({
                                       }
                                       fill
                                       alt={listing.property.photos[0].alt}
+                                      unoptimized
                                     />
                                   ) : null}
                                 </S.Picture>
@@ -219,6 +220,7 @@ const SavedListingsCard = ({
                                       }
                                       fill
                                       alt={listing.property.photos[0].alt}
+                                      unoptimized
                                     />
                                   ) : null}
                                 </S.Picture>

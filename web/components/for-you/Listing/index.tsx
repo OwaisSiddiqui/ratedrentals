@@ -132,6 +132,7 @@ const ListingViewer = ({
                     alt={firstPhoto.alt}
                     fill
                     style={{ objectFit: 'cover' }}
+                    unoptimized
                   />
                 )}
               </S.TopImageCover>
