@@ -43,7 +43,6 @@ const Home = () => {
       </Head>
       <Navbar />
       <S.HeroImage>
-        <BetaHeader />
         <S.MainTitleSection>
           <S.HeadingsSection>
             <S.MainSubHeading>

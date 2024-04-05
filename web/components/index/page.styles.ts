@@ -11,6 +11,18 @@ export const MainTitleSection = styled.header`
   padding: 0rem 1.9rem;
   align-self: flex-start;
   gap: 2rem;
+  @media ${devices.mobile} {
+    max-width: 30rem;
+  }
+  @media ${devices.tabletS} {
+    max-width: 30rem;
+  }
+  @media ${devices.tablet} {
+    max-width: 30rem;
+  }
+  @media ${devices.desktopS} {
+    max-width: 30rem;
+  }
   @media ${devices.desktop} {
     max-width: 30rem;
   }
@@ -25,10 +37,10 @@ export const MainHeading = styled.h1`
     font-size: 2.5rem;
   }
   @media ${devices.tabletS} {
-    font-size: 2.7rem;
+    font-size: 3rem;
   }
   @media ${devices.tablet} {
-    font-size: 2.9rem;
+    font-size: 3rem;
   }
   @media ${devices.desktopS} {
     font-size: 3rem;
@@ -40,6 +52,18 @@ export const MainSubHeading = styled.h2`
   font-weight: 700;
   color: white;
   line-height: 1.4;
+  @media ${devices.mobile} {
+    font-size: 2rem;
+  }
+  @media ${devices.tabletS} {
+    font-size: 2rem;
+  }
+  @media ${devices.tablet} {
+    font-size: 2rem;
+  }
+  @media ${devices.desktopS} {
+    font-size: 2rem;
+  }
   @media ${devices.desktop} {
     font-size: 2rem;
   }
@@ -68,9 +92,9 @@ export const HeadingsSection = styled.div`
   align-items: center;
   gap: 1.5rem;
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 4rem;
   @media ${devices.desktop} {
-    margin-top: 5.5rem;
+    margin-top: 4rem;
     gap: 1rem;
   }
 `
@@ -85,21 +109,24 @@ export const HeroImage = styled.section`
   position: relative;
   justify-content: center;
   @media ${devices.mobile} {
-    background-size: 230%;
+    background-size: 220%;
     background-position: 90% 0%;
-    height: 43rem;
+    height: 28rem;
   }
   @media ${devices.tabletS} {
-    height: 48rem;
+    background-size: 120%;
+    background-position: 50% 0%;
+    height: 30rem;
   }
   @media ${devices.tablet} {
-    background-size: 200%;
-    height: 48rem;
+    background-size: 120%;
+    background-position: 50% 0%;
+    height: 30rem;
   }
   @media ${devices.desktopS} {
-    background-size: 190%;
-    background-position: 100% 0%;
-    height: 48rem;
+    background-size: 120%;
+    background-position: 0% 0%;
+    height: 30rem;
   }
   @media ${devices.desktop} {
     background-size: 120%;
@@ -107,7 +134,6 @@ export const HeroImage = styled.section`
     height: 30rem;
   }
   // border-bottom: ${({ theme }) => `3px solid ${theme.colors.primary.hex}`};
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 `
 
 export const InBetaSection = styled.article`
@@ -136,7 +162,7 @@ export const LearnMore = styled.a`
 
 export const MainContentHeading = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: column;\
   justify-content: center;
   align-items: center;
   height: 16rem;
@@ -144,6 +170,10 @@ export const MainContentHeading = styled.div`
   max-width: 40rem;
   padding: 0 2.5rem;
   font-family: ${({ theme }) => theme.font.family.primary};
+  @media ${devices.tabletS} {
+    height: 13rem;
+    max-width: 30rem;
+  }
   @media ${devices.tabletS} {
     height: 13rem;
     max-width: 30rem;
