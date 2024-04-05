@@ -56,7 +56,8 @@ export const PropertyDetailsSection = styled.ul<{
 export const NotAvailableSection = styled.div`
   display: flex;
   align-items: center;
-  background: white;
+  justify-content: center;
+  background: #fafafa;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -67,8 +68,9 @@ export const NotAvailableSection = styled.div`
 export const NotAvailable = styled.div`
   font-family: ${({ theme }) => theme.font.family.primary};
   color: black;
+  justify-content: center;
   height: 0.9 rem;
-  font-size: 12px;
+  font-size: 10px;
   display: flex;
   align-items: center;
   align-self: center;
