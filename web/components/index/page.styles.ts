@@ -78,7 +78,7 @@ export const HeadingsSection = styled.div`
 export const HeroImage = styled.section`
   display: flex;
   height: 30rem;
-  background-image: url('./images/house.jpeg');
+  background-image: url('./images/house.jpg');
   background-repeat: no-repeat;
   background-position: 100% 0%;
   background-size: 270%;
