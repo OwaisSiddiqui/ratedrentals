@@ -9,6 +9,7 @@ module.exports = async (phase, { defaultConfig }) => {
       styledComponents: true,
     },
     images: {
+      unoptimized: true,
       domains: ['images.rentals.ca'],
     },
     eslint: {
