@@ -214,13 +214,16 @@ export const NotAvailableSection = styled.div`
   display: flex;
   gap: 0.7rem;
   align-items: center;
+  justify-content: center;
   height: 2rem;
-  background: #e00034;
+  background: white;
+  color: black;
   justify-content: center;
   position: sticky;
   top: 0;
   flex: 0 0 auto;
   border-radius: 0;
+  border-bottom: 1px solid lightgray;
 `
 
 export const MainDetailsSection = styled.div<{
@@ -249,10 +252,11 @@ export const TopSticky = styled.div`
 
 export const NotAvailable = styled.div`
   font-family: ${({ theme }) => theme.font.family.primary};
-  color: white;
+  color: black;
   font-size: 12px;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-weight: 600;
   gap: 0.3rem;
 `

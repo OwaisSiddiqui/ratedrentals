@@ -148,9 +148,9 @@ const ListingViewer = ({
               </S.DesktopMainDetailsSection>
             </S.TopSticky>
             <S.DesktopBottom show={isViewMoreDetailsState.value} background={firstPhoto?.scales.large.url ?? ''}>
-              {!isAvailable && <S.NotAvailableSection>
-                <S.NotAvailable><Info color='white' size={{width: 14, height: 14}}/> This listing is no longer available.</S.NotAvailable>
-              </S.NotAvailableSection>}
+              <S.NotAvailableSection>
+                <S.NotAvailable><Info color='black' size={{width: 14, height: 14}}/> This listing is likely no longer available.</S.NotAvailable>
+              </S.NotAvailableSection>
               <S.DesktopSections>
                 {listing ? (
                   <>
