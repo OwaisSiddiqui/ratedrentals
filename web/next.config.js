@@ -10,7 +10,7 @@ module.exports = async (phase, { defaultConfig }) => {
     },
     images: {
       unoptimized: true,
-      domains: ['images.rentals.ca'],
+      remotePatterns: [{protocol: 'https', hostname: '**.images.rentals.ca'}],
     },
     eslint: {
       dirs: [
