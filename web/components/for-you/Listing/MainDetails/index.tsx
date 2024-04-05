@@ -130,9 +130,9 @@ const MainDetails = ({
               </S.TimeAgo>
             </S.Middle>
           </S.Main>
-          {!isAvailable && <S.NotAvailableSection>
-            <S.NotAvailable><Info size={{width: 15, height: 15}} color='white' /> This listing is no longer available.</S.NotAvailable>
-          </S.NotAvailableSection>}
+          <S.NotAvailableSection>
+            <S.NotAvailable><Info size={{width: 15, height: 15}} color='white' /> This listing is likely no longer available.</S.NotAvailable>
+          </S.NotAvailableSection>
         </S.Container>
       ) : (
         <S.Container type={type}>
