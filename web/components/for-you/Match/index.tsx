@@ -107,7 +107,7 @@ const Match = ({
     } else if (rankedListing) {
       return rankedListing._id
     } else {
-      // throw new Error('Could not get listing ID')
+      throw new Error('Could not get listing ID')
     }
   }, [listingData, rankedListing])
   const [isViewed, setIsViewed] = useState(true)

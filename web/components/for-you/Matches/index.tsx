@@ -174,7 +174,7 @@ export const Matches = ({
                 ) : null}
               </Slider>
             </S.MobileContainer>
-          ) : (
+          ) : unviewedRankedListings.length > 0 && (
             <>
               <Match
                   isViewMoreDetailsState={{
