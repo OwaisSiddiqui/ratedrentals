@@ -71,6 +71,7 @@ const Slide = ({
           objectFit: showFullImage ? 'scale-down' : 'cover',
         }}
         quality={100}
+        unoptimized
       />
     </S.Slide>
     : <S.DesktopSlideContainer show={photoState.index === index}>
@@ -88,6 +89,7 @@ const Slide = ({
             boxShadow: '0 30px 30px rgba(255, 255, 255, 0.2)'
           }}
           quality={100}
+          unoptimized 
         />
         
       </S.Cover>
