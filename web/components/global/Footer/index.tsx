@@ -10,11 +10,6 @@ const Footer = () => {
       </Link>
       <S.NavLinks>
         <S.NavLi>
-          <Link passHref href='/beta'>
-            <S.NavLink>Status</S.NavLink>
-          </Link>
-        </S.NavLi>
-        <S.NavLi>
           <Link passHref href='/contact'>
             <S.NavLink>Contact</S.NavLink>
           </Link>

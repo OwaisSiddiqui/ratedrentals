@@ -176,15 +176,7 @@ export const Matches = ({
             </S.MobileContainer>
           ) : (
             <>
-              {matchesIndex === 0 ? (
-                isReturningUser ? (
-                  <WelcomeSlide isTouchDevice={isTouchDevice} navigateListingsComponent={navigateListingsComponent} />
-                ) : (
-                  <SwipeSlide isTouchDevice={isTouchDevice} navigateListingsComponent={navigateListingsComponent} />
-                )
-              ) : null}
-              {matchesIndex !== 0 && (
-                <Match
+              <Match
                   isViewMoreDetailsState={{
                     setValue: setIsViewMoreDetails,
                     value: isViewMoreDetails
@@ -202,7 +194,6 @@ export const Matches = ({
                   key={matchesIndex}
                   navigateListingsComponent={navigateListingsComponent}
                 />
-              )}
             </>
           )}
         </>

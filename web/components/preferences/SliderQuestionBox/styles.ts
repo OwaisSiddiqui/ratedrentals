@@ -1,3 +1,4 @@
+import { devices } from '@/utils/constants'
 import styled from 'styled-components'
 
 export const SliderQuestionBoxComponent = styled.div`
@@ -5,8 +6,10 @@ export const SliderQuestionBoxComponent = styled.div`
   flex-direction: column;
   background: white;
   padding: 2rem;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 1rem 1rem;
+  @media ${devices.mobile} {
+    border-radius: 0 0 1rem 1rem; 
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  }
 `
 
 export const SliderQuestionBox = styled.div`

@@ -1,3 +1,4 @@
+import { devices } from '@/utils/constants'
 import styled from 'styled-components'
 
 export const QuestionSpan = styled.span`
@@ -22,8 +23,10 @@ export const Question = styled.div`
   padding: 0 1rem;
   background: white;
   padding: 2rem;
-  border-radius: 0 0 1rem 1rem;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  @media ${devices.mobile} {
+    border-radius: 0 0 1rem 1rem; 
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  }
 `
 
 export const OptionsSectionWrapper = styled.div`

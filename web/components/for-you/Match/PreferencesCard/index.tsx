@@ -109,7 +109,9 @@ const PreferencesCard = ({
                       })
                       if (!errors.isError) {
                         setIsLoading(true)
-                        router.reload()
+                        router.push({pathname: "for-you"}).then(() => {
+                          return router.reload()
+                        })
                       } else {
                         dispatchErrors({
                           type: 'setShowErrors',
@@ -221,7 +223,9 @@ const PreferencesCard = ({
                       })
                       if (!errors.isError) {
                         setIsLoading(true)
-                        router.reload()
+                        router.push({pathname: "for-you"}).then(() => {
+                          return router.reload()
+                        })
                       } else {
                         dispatchErrors({
                           type: 'setShowErrors',

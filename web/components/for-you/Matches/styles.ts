@@ -86,4 +86,10 @@ export const Prev = styled.button`
 
 export const Next = styled(Prev)`
   flex: 1;
+  // background: ${({ theme }) => theme.colors.primary.hex};
+  // color: white;
+  // &:hover {
+  //   background: ${({ theme }) => theme.colors.primary.hex};
+  //   opacity: 0.5;
+  // }
 `

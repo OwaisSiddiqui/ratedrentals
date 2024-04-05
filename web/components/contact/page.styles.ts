@@ -25,4 +25,5 @@ export const FormWrapper = styled.div`
   width: 100%;
   padding: 2rem;
   max-width: 35rem;
+  position: relative;
 `

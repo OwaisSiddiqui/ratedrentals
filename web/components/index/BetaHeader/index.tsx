@@ -4,7 +4,7 @@ import Chevron from '../../global/icons/Chevron'
 import Close from '../../global/icons/Close'
 import * as S from './styles'
 
-const BetaHeader = () => {
+const BetaHeader = ({ message }: {message: string}) => {
   const [show, setShow] = useState(true)
 
   return (
@@ -16,17 +16,7 @@ const BetaHeader = () => {
       >
         <Close color='#828282' size={{ width: 13, height: 13 }} />
       </S.CloseWrapper>
-      <S.Description>This website is in beta status.</S.Description>
-      <Link href='/beta' passHref>
-        <S.LearnMore>
-          Learn more{' '}
-          <Chevron
-            color='gray'
-            position='right'
-            size={{ width: 10, height: 10 }}
-          />
-        </S.LearnMore>
-      </Link>
+      <S.Description>{message}</S.Description>
     </S.Container>
   )
 }

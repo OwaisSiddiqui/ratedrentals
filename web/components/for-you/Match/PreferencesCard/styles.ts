@@ -65,6 +65,7 @@ export const Wrapper = styled.div`
   flex: 1;
   border-radius: 10px 10px 0 0;
   align-items: center;
+  overflow-y: auto;
 `
 
 export const Footer = styled.div`
@@ -87,6 +88,11 @@ export const DesktopContainer = styled.div`
   align-self: center;
   border-radius: 7px;
   pointer-events: auto;
+  border-radius: 10px;
+  // overflow: hidden;
+  * {
+    box-shadow: none;
+  }
 `
 
 

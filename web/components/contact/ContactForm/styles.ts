@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { PrimaryButton, PrimaryTextInput } from '../../styles'
+import { devices } from '@/utils/constants'
 
 export const FormComponent = styled.div`
   font-family: ${({ theme }) => theme.font.family.primary};
@@ -22,7 +23,10 @@ export const Title = styled.h1`
   font-weight: 600;
   padding-bottom: 1.5rem;
   font-family: ${({ theme }) => theme.font.family.primary};
-  font-size: 32px;
+  font-size: 24px;
+  @media ${devices.desktop} {
+    font-size: 32px;
+  }
 `
 
 export const InputSectionLabel = styled.label`

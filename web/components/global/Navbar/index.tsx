@@ -10,10 +10,6 @@ interface Page {
 
 const pages: Page[] = [
   {
-    name: 'Status',
-    url: '/beta',
-  },
-  {
     name: 'Contact',
     url: '/contact',
   }

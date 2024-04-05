@@ -43,6 +43,7 @@ const Home = () => {
       </Head>
       <Navbar />
       <S.HeroImage>
+        <BetaHeader message={'This is a demo website and does not include active listings.'} />
         <S.MainTitleSection>
           <S.HeadingsSection>
             <S.MainSubHeading>
