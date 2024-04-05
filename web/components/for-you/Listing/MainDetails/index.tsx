@@ -131,7 +131,7 @@ const MainDetails = ({
             </S.Middle>
           </S.Main>
           <S.NotAvailableSection>
-            <S.NotAvailable><Info size={{width: 15, height: 15}} color='white' /> This listing is likely no longer available.</S.NotAvailable>
+            <S.NotAvailable><Info size={{width: 15, height: 15}} color='black' /> This listing is likely no longer available.</S.NotAvailable>
           </S.NotAvailableSection>
         </S.Container>
       ) : (
