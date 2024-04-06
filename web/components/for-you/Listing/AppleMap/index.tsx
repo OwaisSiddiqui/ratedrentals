@@ -32,7 +32,7 @@ const AppleMap = ({
   return (
     <>
         {latAndLng.lat && latAndLng.lng && (
-                <Map mapType={MapType.Hybrid} maxCameraDistance={99} token={APPLE_MAPS_TOKEN} initialRegion={{centerLatitude: latAndLng.lat, centerLongitude: latAndLng.lng, latitudeDelta: 0.001, longitudeDelta: 0.001}}>
+                <Map mapType={MapType.Hybrid} token={APPLE_MAPS_TOKEN} initialRegion={{centerLatitude: latAndLng.lat, centerLongitude: latAndLng.lng, latitudeDelta: 0.001, longitudeDelta: 0.001}}>
                     <Marker latitude={latAndLng.lat} longitude={latAndLng.lng} />
                 </Map>
             )
