@@ -13,8 +13,6 @@ const GOOGLE_ANALYTICS_TAG_ID = 'G-B5P6YFJ72F'
 const GOOGLE_ANALYTICS_GOOGLE_ADS_PROFILE_TAG_ID = 'UA-189053626-1'
 const GOOGLE_ANALYTICS_G4_PROPERTY_TAG_ID = 'G-6TKY357QYN'
 
-declare var adsbygoogle: any
-
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet()

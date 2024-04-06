@@ -12,7 +12,7 @@ import {
   useRef,
   useState,
 } from 'react'
-import GoogleMap from '@/components/for-you/Listing/GoogleMap'
+import AppleMap from '@/components/for-you/Listing/AppleMap'
 import { getListingById } from '@/utils/api'
 import MainDetails from '@/components/for-you/Listing/MainDetails'
 import { getBadges } from '@/utils/card'
@@ -277,9 +277,9 @@ const Match = ({
                 </S.SaveButton>
               </S.Buttons>
             </S.Sidebar>
-            <S.GoogleMapWrapper isLoading={isLoading} show={isMapOpen}>
+            {isMapOpen && <S.GoogleMapWrapper isLoading={isLoading} show={isMapOpen}>
               {listing ? (
-                <GoogleMap
+                <AppleMap
                   coordinates={{
                     lat: listing.property.location.coordinates.lat,
                     lng: listing.property.location.coordinates.lng,
@@ -287,7 +287,7 @@ const Match = ({
                   id={listing.url + 'inMatch'}
                 />
               ) : null}
-            </S.GoogleMapWrapper>
+            </S.GoogleMapWrapper>}
             <TourViewer
               isTouchDevice={isTouchDevice}
               show={isTour3dOpen}
@@ -506,7 +506,7 @@ const Match = ({
                     show={isMapOpen}
                   >
                     {listing ? (
-                      <GoogleMap
+                      <AppleMap
                         coordinates={{
                           lat: listing.property.location.coordinates.lat,
                           lng: listing.property.location.coordinates.lng,

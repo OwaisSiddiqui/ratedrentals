@@ -21,7 +21,6 @@ import Bookmark from '@/components/global/icons/Bookmark'
 import Image from 'next/future/image'
 import ThreeDotsVertical from '@/components/global/icons/ThreeDotsVertical'
 import Filter from '@/components/global/icons/Filter'
-import InArticleListingAd from '@/components/global/Ad/InArticleListingAd'
 import { SetState } from 'immer/dist/internal'
 
 const ListingViewer = ({

@@ -256,7 +256,7 @@ export const GoogleMapWrapper = styled.div<{
   position: absolute;
   z-index: 3;
   width: 100%;
-  height: calc(100% - 5rem);
+  height: 100%;
   display: ${({ show }) => (show ? 'block' : 'none')};
   background: #e2e2e2;
   animation: ${({ isLoading }) => (isLoading ? loadingAnimation : '')};

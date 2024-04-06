@@ -6,11 +6,11 @@ export const Container = styled.div`
   flex-direction: column;
   min-height: 100%;
   flex: 1;
-  background-image: url('./images/bedroom.jpg');
   background-repeat: no-repeat;
   background-position: 30% 0%;
   background-size: cover;
-  @media ${devices.tablet} {
+  @media ${devices.mobile} {
+    background-image: url('./images/bedroom.jpg');
     background-position: 100% 0%;
   }
 `
