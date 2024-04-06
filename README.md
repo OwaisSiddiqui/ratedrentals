@@ -91,4 +91,4 @@ The website is deployed on Vercel.
 - AWS SDK v3 (for ECS tasks)
   
  #### Deployment
-Vercel
+AWS ECS
