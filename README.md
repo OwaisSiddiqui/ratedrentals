@@ -48,7 +48,7 @@ RatedRentals started because trying to find an rental home which best fit your p
 
 #### Deployment
 
-The website is deployed on AWS using [Serverless Next.js](https://github.com/serverless-nextjs/serverless-next.js).
+The website is deployed on Vercel.
 
 ## Ranking
 
