@@ -301,6 +301,6 @@ def handler(event, context):
                           listing_preferences, priorities)
         ranked_listings.append(
             {"_id": str(listing["oid__id"]), "score": score, "updated": listing["updated"]})
-    ranked_listings.sort(key=lambda listing: (-listing["score"], datetime.fromisoformat(
+    ranked_listings.sort(key=lambda listing: (listing["score"], datetime.fromisoformat(
         listing['updated'].replace('Z', '+00:00'))), reverse=True)
     return ranked_listings
