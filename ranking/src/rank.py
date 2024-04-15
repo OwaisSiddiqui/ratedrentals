@@ -6,11 +6,6 @@ from datetime import datetime
 
 load_dotenv()
 
-MONGODB_RATEDRENTALS_RENTALSCA_COLLECTION_NAME = os.getenv(
-    "MONGODB_RATEDRENTALS_RENTALSCA_COLLECTION_NAME")
-if not MONGODB_RATEDRENTALS_RENTALSCA_COLLECTION_NAME:
-    raise Exception(
-        "MONGODB_RATEDRENTALS_RENTALSCA_COLLECTION_NAME env not defined")
 CITY=None
 
 class EventNotFormattedCorrectly(Exception):

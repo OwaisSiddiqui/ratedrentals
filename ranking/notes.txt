@@ -1,0 +1,9 @@
+To install Python stuff:
+
+serverless plugin install -n serverless-python-requirements
+
+Deploy:
+
+serverless deploy
+
+- Make sure Docker is installed and running (or get Error: spawn docker ENOENT)
