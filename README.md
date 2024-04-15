@@ -1,7 +1,7 @@
 
-# ratedrentals
+# RatedRentals.ca
 
-RatedRentals LLC website, scrapers, and ranking algorithm source code.
+RatedRentals.ca web app, web scrapers, and ranking algorithm source code.
 Website URL: https://ratedrentals.ca
 
 ## Motivation
@@ -48,7 +48,7 @@ RatedRentals started because trying to find an rental home which best fit your p
 
 #### Deployment
 
-The website is deployed on AWS using [Serverless Next.js](https://github.com/serverless-nextjs/serverless-next.js).
+The website is deployed on Vercel.
 
 ## Ranking
 
@@ -91,7 +91,4 @@ The website is deployed on AWS using [Serverless Next.js](https://github.com/ser
 - AWS SDK v3 (for ECS tasks)
   
  #### Deployment
-AWS
-
-## Code Structure
-
+AWS ECS
